@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollectionViewHeader" customModule="CollectionViewStickHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="474" height="331"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bose-700-gear-patrol-full-lead" translatesAutoresizingMaskIntoConstraints="NO" id="Sdv-pk-hvN">
+                    <rect key="frame" x="80" y="0.0" width="480" height="480"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="480" id="BpM-bl-hJ5"/>
+                        <constraint firstAttribute="width" constant="480" id="QEU-dY-3XK"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="-3" translatesAutoresizingMaskIntoConstraints="NO" id="b5M-tY-AqS">
+                    <rect key="frame" x="70" y="35.5" width="102" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXe-hb-igt">
+                            <rect key="frame" x="0.0" y="0.0" width="102" height="51.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="43"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="700" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8am-dJ-LFM">
+                            <rect key="frame" x="8.5" y="48.5" width="85" height="51.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="43"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-7u-rFn">
+                    <rect key="frame" x="0.0" y="169" width="474" height="198"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Today      15 Fri       16 Sat       17 Sun      18 Mon" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-xe-Pef">
+                            <rect key="frame" x="87.5" y="32.5" width="299" height="45.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45.5" id="miR-5P-y1C"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.078431372549019607" green="0.25490196078431371" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="wdv-xe-Pef" firstAttribute="top" secondItem="TBO-7u-rFn" secondAttribute="top" constant="32.5" id="KmA-Ux-YGo"/>
+                        <constraint firstAttribute="height" constant="198" id="eUl-Cg-k6n"/>
+                        <constraint firstItem="wdv-xe-Pef" firstAttribute="centerX" secondItem="TBO-7u-rFn" secondAttribute="centerX" id="fJf-ik-TuJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="b5M-tY-AqS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="GkW-3A-IAD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="b5M-tY-AqS" secondAttribute="top" constant="8.5" id="KXc-SJ-L2o"/>
+                <constraint firstItem="TBO-7u-rFn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="a8H-3n-fwa"/>
+                <constraint firstItem="Sdv-pk-hvN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cne-JM-nan"/>
+                <constraint firstItem="TBO-7u-rFn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eDO-d2-dAO"/>
+                <constraint firstAttribute="bottom" secondItem="TBO-7u-rFn" secondAttribute="bottom" constant="-36" id="noa-67-syb"/>
+                <constraint firstAttribute="trailing" secondItem="Sdv-pk-hvN" secondAttribute="trailing" constant="-86" id="o3M-Nv-zz5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="noa-67-syb" id="y2z-Yj-Hxt"/>
+                <outlet property="dateView" destination="TBO-7u-rFn" id="ADV-78-suf"/>
+                <outlet property="dateViewHeightConstraint" destination="eUl-Cg-k6n" id="RfB-uY-N0X"/>
+                <outlet property="dateViewWidthConstraint" destination="a8H-3n-fwa" id="R4P-PR-5um"/>
+                <outlet property="imageTopConstraint" destination="cne-JM-nan" id="Bdh-cp-4aT"/>
+                <outlet property="leadingTitleConstraint" destination="GkW-3A-IAD" id="40J-NJ-HJW"/>
+                <outlet property="timeTopConstaint" destination="KmA-Ux-YGo" id="ayS-BJ-Dlj"/>
+                <outlet property="titleTopConstraint" destination="KXc-SJ-L2o" id="hIA-RW-ZrM"/>
+            </connections>
+            <point key="canvasLocation" x="91.304347826086968" y="317.74553571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bose-700-gear-patrol-full-lead" width="1940" height="1300"/>
+        <image name="Today      15 Fri       16 Sat       17 Sun      18 Mon" width="299" height="19.5"/>
+    </resources>
+</document>
